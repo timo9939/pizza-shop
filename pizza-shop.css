@@ -1,4 +1,31 @@
 #home-title{
     background-color: lightblue;
-    align-
+    align-content: center;
+}
+
+body{
+    background:url(./pizza-cover.jpg) ;
+    background-size: cover ;
+  
+}
+
+.navbar{
+    background-color: rgba(245, 245, 245, 0.518);
+    list-style-type: none;
+  
+}
+
+li{
+    display: inline-block;
+    justify-content: right;
+}
+
+footer{
+    background-color: rgba(241, 174, 49, 0.862);
+    position: fixed;
+    bottom:10px;
+}
+
+.box{
+    background-color: aliceblue;
 }
