@@ -31,27 +31,30 @@ footer{
 .box{
     top: 20px;
     
-    display: block;
+    display:block;
     column-gap: 5em;
     column-count:3;
     padding: 5em;
+    overflow: hidden;
+    min-width: auto;
+
 }
+
+section{
+    display: inline;
+min-height: max-content;}
 
 .box1{
 background-color: aliceblue;
 padding:1em
 }
 
-.box2,.box3,.box4[data-sizing="intrinsic"]{
+.box2,.box3,.box4{
     background-color: aliceblue;
     padding:1em;
     height: max-content;
     text-align: center;
     }
-
-.smallBox2{
-
-}
 
 
 .navbar{
