@@ -31,7 +31,7 @@ footer{
 .box{
     top: 20px;
     
-    display:block;
+    display:flex;
     column-gap: 5em;
     column-count:3;
     padding: 5em;
@@ -54,9 +54,20 @@ padding:1em
     padding:1em;
     height: max-content;
     text-align: center;
+    font-size: clamp(0.5rem,3Vw,5rem);
     }
 
 
 .navbar{
     position: sticky;
+}
+
+.menuBar{
+    background-color: rgba(142, 254, 117, 0.795);
+    text-align: right;
+    right: 10rem;
+}
+
+.search{
+    text-align: right;
 }
