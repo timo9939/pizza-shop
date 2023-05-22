@@ -71,3 +71,28 @@ padding:1em
 .search{
     text-align: right;
 }
+
+#basket{
+    position: sticky;
+    bottom: 30%;
+    left: 90%;
+    width: 20%;
+    height: 100%;
+    background-color: yellow;
+
+}
+
+caption{
+    border: solid 1px black;
+}
+
+tr{
+    border: solid 1px black;
+}
+
+th{
+    border: solid 1px black;
+}
+td{
+    border: solid 1px black;
+}
