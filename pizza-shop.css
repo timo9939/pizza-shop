@@ -42,7 +42,7 @@ footer{
 
 section{
     display: inline;
-min-height: max-content;}
+}
 
 .box1{
 background-color: aliceblue;
@@ -52,9 +52,9 @@ padding:1em
 .box2,.box3,.box4{
     background-color: aliceblue;
     padding:1em;
-    height: max-content;
     text-align: center;
     font-size: clamp(0.5rem,3Vw,5rem);
+    flex-basis: 1;
     }
 
 
@@ -93,6 +93,7 @@ tr{
 th{
     border: solid 1px black;
 }
+
 td{
     border: solid 1px black;
 }

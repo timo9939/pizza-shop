@@ -55,7 +55,24 @@
         <button>Add this item</button>
     </div>
     </section>
-    <footer><button id="basket">Basket</button></footer>
+    <div id="basket">
+        <table>
+            <caption>Basket</caption>
+            <tr>
+                <th>Item </th>
+                <th>Quantity</th>
+                <th>Price</th>
+              </tr>
+              <tr>
+                <td id="item">Name</td>
+                <td id="quantity">000</td>
+                <td id="price">£</td>
+              </tr>
+        </table>
+    </div>
+  
+  
+<footer><button onclick="displayBasket()" id="basket-btn" >Basket</button></footer>
 
 </body>
 </html>
