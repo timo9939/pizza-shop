@@ -21,7 +21,6 @@ document.getElementById("item").innerText=item
 
 
 function addItem(){
-   
     console.log("addItem is working")
     console.log(this.name)
 item=this.name
@@ -29,7 +28,7 @@ priceProduct=document.querySelector(".price").textContent
 console.log("priceProduct is £",priceProduct)
 document.getElementById("price").innerText=priceProduct
 document.getElementById("item").innerText=item
-quantity++
+quantity=quantity+0.5
 document.getElementById("quantity").innerText=quantity
 }
 
