@@ -38,36 +38,33 @@
         <img src="photo/pizza-photo/pepperoni-pizza.jpg" alt="penne" width="70%" height="30%"> 
         <h4>£8.49</h4>
         <h5>2 for £15.99</h5>
-        <button onclick="addItem()" class="add" >Add this item</button>
+        <button onclick="addRowtoBasket(this)" class="add" name="Pepperoni Pizza">Add this item </button>
     </article>
 
     <div class="box3">
     <h2>Tomato Pizza</h2>
     <img src="photo/pizza-photo/tomato pizza.jpg" alt="tomato-pizza" width="70%" height="30%">
     <h4>£9.49</h4>
-    <button onclick="addItem()" class="add" >Add this item</button>
+    <button onclick="addRowtoBasket(this)" class="add" name="Tomato Pizza">Add this item</button>
     </div>
     
     <div class="box4">
         <h2>Salmon Pizza</h2>
         <img src="photo/pizza-photo/salmon-pizza.jpg" width="70%" height="30%">
         <h4>£12.49</h4>
-        <button onclick="addItem()" class="add" >Add this item</button>
+        <button onclick="addRowtoBasket(this)" class="add" name="Salmon Pizza" >Add this item</button>
     </div>
     </section>
-    <div id="basket">
-        <table>
+
+    <div >
+        <table id="basket">
             <caption>Basket</caption>
             <tr>
                 <th>Item </th>
                 <th>Quantity</th>
                 <th>Price</th>
               </tr>
-              <tr>
-                <td id="item">Name</td>
-                <td id="quantity">000</td>
-                <td id="price">£</td>
-              </tr>
+           
         </table>
     </div>
   
