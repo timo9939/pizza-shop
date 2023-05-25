@@ -1,5 +1,5 @@
 let basket=document.getElementById("basket")
-// basket.style.display="none"
+basket.style.display="none"
 let item
 let quantity=0
 let priceProduct
@@ -60,10 +60,16 @@ table.appendChild(newRow)
 
 
 function displayBasket(){
+ if(basket.style.display="none"){
 basket.style.display="block"
 console.log("Button Working")
-item="Mango Ice-cream"
-document.getElementById("item").innerText=item
+ } 
+ else if(basket.style.display="block") {
+  basket.style.display="none"
+console.log("Button none is Working")
+ }
+
+
 }
 
 let cart=[];

@@ -73,17 +73,18 @@ padding:1em
 }
 
 #basket{
-    position: sticky;
-    bottom: 30%;
-    left: 90%;
+    position: fixed;
+    bottom: 10%;
+    left: 80%;
     width: 20%;
-    height: 100%;
+    height: 50%;
     background-color: yellow;
 
 }
 
 caption{
     border: solid 1px black;
+    background-color: yellow;
 }
 
 tr{
