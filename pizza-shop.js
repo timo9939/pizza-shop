@@ -7,22 +7,24 @@ let i=0
 let rowCount=2
 let columnCount=2
 
-let add=document.querySelectorAll(".add")
+
 
 const productsEl=document.querySelector(".products")
 
 
 
-function addRowtoBasket(){
+function addRowtoBasket(button){
+// const add=document.querySelector(".add").getAttribute("name")
 const table=basket
 const newRow=document.createElement("tr")
 
 const cell1=document.createElement("td")
-cell1.textContent="Cell 1"
+cell1.textContent=button.name
+// console.log("add.name is",add.name)
 newRow.appendChild(cell1)
 
 const cell2=document.createElement("td")
-cell2.textContent="Cell 2"
+cell2.textContent=1
 newRow.appendChild(cell2)
 
 const cell3=document.createElement("td")
