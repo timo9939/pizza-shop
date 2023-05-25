@@ -9,7 +9,7 @@ let columnCount=2
 
 
 
-const productsEl=document.querySelector(".products")
+const product=document.querySelector(".products")
 
 
 
@@ -17,6 +17,7 @@ function addRowtoBasket(button){
 // const add=document.querySelector(".add").getAttribute("name")
 const table=basket
 const newRow=document.createElement("tr")
+
 
 const cell1=document.createElement("td")
 cell1.textContent=button.name
@@ -27,9 +28,24 @@ const cell2=document.createElement("td")
 cell2.textContent=1
 newRow.appendChild(cell2)
 
-const cell3=document.createElement("td")
-cell3.textContent="Cell 3"
+//cell 3 find item
+const productName= cell1.textContent
+const product = products.find(item => item.name === productName);
+
+if (product) {  
+  const cell3=document.createElement("td")
+  const productPrice = product.price;
+cell3.textContent=productPrice
 newRow.appendChild(cell3)
+
+  console.log("Price of", productName, "is", productPrice);
+} 
+
+else {
+  console.log("Product not found");
+}
+
+
 
 table.appendChild(newRow)
 
