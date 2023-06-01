@@ -9,7 +9,7 @@ let columnCount=2
 
 
 
-const product=document.querySelector(".products")
+const productList=document.querySelector(".products")
 
 // addRow to Basket function
 function addRowtoBasket(button){
@@ -28,7 +28,8 @@ newRow.appendChild(cell2)
 
 //cell 3 find item
 const productName= cell1.textContent
-const product = products.find(item => item.name === productName);
+const product = products.find(products => products.name === productName);
+// console.log("product is",product)
 
 if (product) {  
   const cell3=document.createElement("td")
@@ -57,6 +58,37 @@ else {
 
 table.appendChild(newRow)
 
+}
+
+//Retrieve Data from LocalStorage
+function retrieveTable(){
+ for(let n= 0; i<localStorage.length; i++ ){
+
+const tableData=localStorage.key(i)
+const tableDataPrice=localStorage.getItem(tableData)
+const storageLength=localStorage.length
+console.log(tableData,tableDataPrice,"Length of localstorage is",storageLength)
+
+const table=basket
+const newRow=document.createElement("tr")
+
+const cell1=document.createElement("td")
+cell1.textContent=tableData
+// console.log("add.name is",add.name)
+newRow.appendChild(cell1)
+
+const cell2=document.createElement("td")
+cell2.textContent=1
+newRow.appendChild(cell2)
+
+//cell 3 find item
+const cell3=document.createElement("td")
+cell3.textContent=tableDataPrice
+newRow.appendChild(cell3)
+
+table.appendChild(newRow)
+}
+
 
 
 
@@ -64,7 +96,7 @@ table.appendChild(newRow)
 
 }
 
-
+retrieveTable()
 
 
 
