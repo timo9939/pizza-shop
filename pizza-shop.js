@@ -11,13 +11,11 @@ let columnCount=2
 
 const product=document.querySelector(".products")
 
-
-
+// addRow to Basket function
 function addRowtoBasket(button){
 // const add=document.querySelector(".add").getAttribute("name")
 const table=basket
 const newRow=document.createElement("tr")
-
 
 const cell1=document.createElement("td")
 cell1.textContent=button.name
@@ -39,19 +37,33 @@ cell3.textContent=productPrice
 newRow.appendChild(cell3)
 
   console.log("Price of", productName, "is", productPrice);
+
+//Save to localStorage
+  function saveLocal(cell1,cell3){
+  let storeCell1=cell1.textContent;
+  let storeCell3=cell3.textContent
+  console.log("storeCell3 is",typeof(storeCell3)," type")
+  console.log("storeCell1 is",storeCell1)
+  console.log("storeCell3 is",storeCell3)
+  window.localStorage.setItem(storeCell1,storeCell3)
+}
+
+saveLocal(cell1, cell3)
 } 
 
 else {
   console.log("Product not found");
 }
 
-
-
 table.appendChild(newRow)
+
+
+
+
+
 
 }
 
-// addRowtoBasket()
 
 
 
@@ -59,6 +71,8 @@ table.appendChild(newRow)
 
 
 
+
+//displayBasket Function
 function displayBasket(){
  if(basket.style.display="none"){
 basket.style.display="block"
@@ -74,18 +88,6 @@ console.log("Button none is Working")
 
 let cart=[];
  
-// function addItem(){
-//   // const item=cart.find((cart) => cart.id===id);
 
-//   console.log("addItem is working")
-// console.log(this.name)
-// item=this.name
-// priceProduct=document.querySelector(".price").textContent
-// console.log("priceProduct is £",priceProduct)
-// document.getElementById("price").innerText=priceProduct
-// document.getElementById("item").innerText=item
-// quantity=quantity+0.5
-// document.getElementById("quantity").innerText=quantity
-// }
 
 
